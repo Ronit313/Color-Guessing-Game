@@ -7,7 +7,7 @@ const hard = document.getElementById("hardbtn");
 let button = document.getElementsByClassName("button");
 let color = [];
 let numSqaure = 6;
-requiredColor.style.fontSize = '60px';
+requiredColor.style.fontSize = '55px';
 
 
 console.log(reset);

@@ -28,6 +28,8 @@
     font-size: 20px;
 }
 
+
+
 #reset, #message, #easybtn, #hardbtn{
     font-size: 20px;
     color: rgb(45, 87, 224);
@@ -49,11 +51,11 @@
     flex-direction: column;
     align-items: center;
     
-    background-color: rgb(138, 43, 226);
+    background-color: black;
 }
 
 .row-1, .row-2{
-    margin-top: 20px;
+    margin-top: 30px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -62,10 +64,13 @@
 }
 
 .button{
-    border-radius: 10%;
+    border-radius: 15%;
     border: none;
     width: 30%;
     height: 180px; 
     margin: auto;
+    transition: all 0.5s;
 }
+
+
 

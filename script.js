@@ -41,7 +41,7 @@ function setupSquare(numSqaure){
             else{
                 result.innerText = "Try Again";
                 result.style.color = "red";
-                button[i].style.backgroundColor = "rgb(138, 43, 226)";
+                button[i].style.backgroundColor = "black";
             }
         })
     }
@@ -55,6 +55,7 @@ function generateRandomColors(numSqaure){
 }
 
 reset.addEventListener('click', () => {
+    header[0].style.backgroundColor = "rgb(212, 226, 13)";
     result.innerText = '';
     reset.innerText = "New Color";
     generateRandomColors(numSqaure)
@@ -62,6 +63,7 @@ reset.addEventListener('click', () => {
 })
 
 easy.addEventListener('click', () => {
+    header[0].style.backgroundColor = "rgb(212, 226, 13)";
     result.innerText = '';
     reset.innerText = "New Color";
     document.getElementsByClassName("row-2")[0].style.display = "none";
@@ -72,6 +74,7 @@ easy.addEventListener('click', () => {
 })
 
 hard.addEventListener('click', () => {
+    header[0].style.backgroundColor = "rgb(212, 226, 13)";
     result.innerText = '';
     reset.innerText = "New Color";
     document.getElementsByClassName("row-2")[0].style.display = "flex";

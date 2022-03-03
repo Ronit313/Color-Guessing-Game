@@ -10,9 +10,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 40px;
+    font-size: 35px;
     color: whitesmoke;
-    background-color: rgb(212, 226, 13);
+    background-color: rgb(228, 241, 33);
     padding: 10px;
     height: 22vh;
 }
@@ -38,6 +38,10 @@
     border: none;
     background: none;
     padding: 2px;
+}
+
+#reset:hover, #easybtn:hover, #hardbtn:hover{
+    background-color: rgb(240, 77, 77);
 }
 
 #message{

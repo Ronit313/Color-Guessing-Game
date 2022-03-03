@@ -9,6 +9,17 @@ let color = [];
 let numSqaure = 6;
 requiredColor.style.fontSize = '55px';
 
+function disableButton(){
+    for (let i = 0; i < numSqaure; i++) {
+        button[i].disabled = true;      
+    }
+}
+
+function enableButton(){
+    for (let i = 0; i < numSqaure; i++) {
+        button[i].disabled = false;      
+    }
+}
 
 console.log(reset);
 
@@ -24,8 +35,8 @@ function randomColor(){
 }
 
 function setupSquare(numSqaure){
-    
-    let ans = color[Math.floor(Math.random()*(numSqaure-1))];
+    enableButton();
+    let ans = color[Math.floor(Math.random()*(numSqaure))];
     requiredColor.innerText = ans;
     for(let i = 0; i < numSqaure; i++){
         button[i].addEventListener('click', () => {
@@ -37,6 +48,7 @@ function setupSquare(numSqaure){
                 }
                 header[0].style.backgroundColor = ans;
                 reset.innerText = "Play Again?"
+                disableButton();
             }
             else{
                 result.innerText = "Try Again";
